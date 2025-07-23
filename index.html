@@ -9,6 +9,10 @@
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
     <title>ReReddit</title>
     <script async src="main.js"></script>
   </head>
@@ -20,12 +24,11 @@
       <div class="row justify-content-md-center" id="message-board"></div>
       <div class="row justify-content-md-center">
         <div class="col-7 mt-3 fs-4">
-          <input
+          <textarea
             id="post-text"
-            type="text"
             class="form-control"
             placeholder="Post Text"
-          />
+          ></textarea>
         </div>
       </div>
       <div class="row justify-content-md-center">
@@ -40,11 +43,16 @@
       </div>
       <div class="row justify-content-md-center">
         <div class="col-7 mt-3 align-self-start">
-          <button id="btn" type="button" class="btn btn-primary">
+          <button id="submitPostgit " type="button" class="btn btn-primary">
             Submit Post
           </button>
         </div>
       </div>
     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
