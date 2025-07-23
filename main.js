@@ -2,10 +2,10 @@ var messageBoard = document.getElementById("message-board")
 let clickCount = 0;
 var userName = document.getElementById("your-name");
 var postText = document.getElementById("post-text");
-const btn = document.getElementById("btn");
+const submitPost = document.getElementById("submitPost");
 const reply = document.getElementById("reply-thread");
 
-btn.addEventListener("click", function () {
+submitPost.addEventListener("click", function () {
   clickCount++;
   
   messageBoard.insertAdjacentHTML("beforeend", `
@@ -16,7 +16,7 @@ btn.addEventListener("click", function () {
       <div class="collapse" id="commentThread">
         <div class="row justify-content-md-center" id="comments"></div>
         <div class="row justify-content-md-center">
-          <div class="col-7 mt-3 fs-5">
+          <div class="col-10 mt-3 fs-5">
             <textarea
               id="comment-text"
               class="form-control"
@@ -25,7 +25,7 @@ btn.addEventListener("click", function () {
           </div>
         </div>
         <div class="row justify-content-md-center">
-          <div class="col-7 mt-3 fs-5">
+          <div class="col-10 mt-3 fs-5">
             <input
               id="commenter-name"
               type="text"
@@ -35,7 +35,7 @@ btn.addEventListener("click", function () {
           </div>
         </div>
         <div class="row justify-content-md-center">
-          <div class="col-7 mt-3 align-self-start">
+          <div class="col-10 mt-3 align-self-start">
             <button id="submitComment" type="button" class="btn btn-primary">
               Submit Comment
             </button>
